@@ -42,8 +42,9 @@ Help Adam gain confidence in further development by automatically testing the mo
 
 ### Things to note
 
-- Use any testing technology you'd like – Cypress, Selenium or any other you think would work well
-- Feel free to modify or add whatever you need including addition of other packages, your own libraries, etc
+- Required tech stack: Python, Java, or Clojure. Feel free to work with the one of your preference.
+- Feel free to modify or add whatever you need including the addition of other packages, your own libraries, etc
 - Please submit a link to your finished repository when you are ready
+- Add a docker image
 
 ## Good luck and happy coding! :)
