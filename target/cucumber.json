@@ -1,0 +1,224 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5873473030,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open the test environment \"http://localhost:3000/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:3000/",
+                  "offset": 27
+                }
+              ],
+              "location": "searchPageSteps.openTheTestEnvironment(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 32,
+        "name": "TS:[\"002\"] - [health Check Page]  - \"001\" - \"Search for a repo in input field and check result\"",
+        "description": "",
+        "id": "dev-test-functions;ts:[\"\u003cts\u003e\"]---[health-check-page]----\"\u003cscenario\u003e\"---\"\u003cdescription\u003e\";;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 617868416,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "search for a repo \"11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 19
+                }
+              ],
+              "location": "searchPageSteps.searchForARepoRepo(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3101892917,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "navigate on repo \"2D-Platformer-Engine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2D-Platformer-Engine",
+                  "offset": 18
+                }
+              ],
+              "location": "searchPageSteps.navigateOnRepo(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5152850391,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "check message on screen github \"GuodGameEngine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "GuodGameEngine",
+                  "offset": 32
+                }
+              ],
+              "location": "searchPageSteps.checkMessageOnScreenGithub(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@regressive2"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 5267777670,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "open the test environment \"http://localhost:3000/\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "http://localhost:3000/",
+                  "offset": 27
+                }
+              ],
+              "location": "searchPageSteps.openTheTestEnvironment(String)"
+            },
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 33,
+        "name": "TS:[\"002\"] - [health Check Page]  - \"001\" - \"Search for a repo in input field and check result\"",
+        "description": "",
+        "id": "dev-test-functions;ts:[\"\u003cts\u003e\"]---[health-check-page]----\"\u003cscenario\u003e\"---\"\u003cdescription\u003e\";;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 716280044,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "search for a repo \"11\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "11",
+                  "offset": 19
+                }
+              ],
+              "location": "searchPageSteps.searchForARepoRepo(String)"
+            },
+            "matchedColumns": [
+              3
+            ],
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 283956518,
+              "error_message": "java.lang.AssertionError\n\tat org.junit.Assert.fail(Assert.java:86)\n\tat org.junit.Assert.assertTrue(Assert.java:41)\n\tat org.junit.Assert.assertFalse(Assert.java:64)\n\tat org.junit.Assert.assertFalse(Assert.java:74)\n\tat br.com.luisdet.Pages.searchPage.navigateOnRepo(searchPage.java:59)\n\tat br.com.luisdet.Steps.searchPageSteps.navigateOnRepo(searchPageSteps.java:40)\n\tat ✽.And navigate on repo \"2D-Platformer-Engine\"(devtest.feature:28)\n",
+              "status": "failed"
+            },
+            "line": 28,
+            "name": "navigate on repo \"2D-Platformer-Engine\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2D-Platformer-Engine",
+                  "offset": 18
+                }
+              ],
+              "location": "searchPageSteps.navigateOnRepo(String)"
+            },
+            "matchedColumns": [
+              4
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "skipped"
+            },
+            "line": 29,
+            "name": "check message on screen github \"teste123\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "teste123",
+                  "offset": 32
+                }
+              ],
+              "location": "searchPageSteps.checkMessageOnScreenGithub(String)"
+            },
+            "matchedColumns": [
+              5
+            ],
+            "keyword": "When "
+          }
+        ],
+        "tags": [
+          {
+            "line": 25,
+            "name": "@regressive2"
+          }
+        ]
+      }
+    ],
+    "name": "Dev Test Functions",
+    "description": "",
+    "id": "dev-test-functions",
+    "keyword": "Feature",
+    "uri": "devtest.feature"
+  }
+]
