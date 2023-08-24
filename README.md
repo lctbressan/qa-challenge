@@ -12,6 +12,8 @@
 4 - The features folder contais all tests features, so, could you create a new tag if you want and replace on
 tags={"@regressive"}, on Runner class.
 
+to run test, goto Runner, and run, have a nice test!!!
+
 # QA Automation Coding Challenge
 
 Thank you for taking the time to complete this challenge!

@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="21.014099">
-<testcase classname="Dev Test Functions" name="TS:[&quot;002&quot;] - [health Check Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot;" time="14.746085">
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="71.64354">
+<testcase classname="Dev Test Cases" name="TS:[&quot;001&quot;] - [health Check Page]  - &quot;001&quot; - &quot;Check Page text is display&quot;" time="11.908377">
 <system-out><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When search for a repo "11".................................................passed
-And navigate on repo "2D-Platformer-Engine".................................passed
-When check message on screen github "GuodGameEngine"........................passed
+When check message on screen "Github Username"..............................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Dev Test Functions" name="TS:[&quot;002&quot;] - [health Check Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 2" time="6.268014">
-<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#10;&#9;at br.com.luisdet.Pages.searchPage.navigateOnRepo(searchPage.java:59)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.navigateOnRepo(searchPageSteps.java:40)&#10;&#9;at ✽.And navigate on repo &quot;2D-Platformer-Engine&quot;(devtest.feature:28)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When search for a repo "11".................................................passed
-And navigate on repo "2D-Platformer-Engine".................................failed
-When check message on screen github "teste123"..............................skipped
+<testcase classname="Dev Test Cases" name="TS:[&quot;001&quot;] - [health Check Page]  - &quot;002&quot; - &quot;Check Page text inst display&quot;" time="19.960226">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#10;&#9;at br.com.luisdet.Pages.searchPage.checkMessage(searchPage.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreen(searchPageSteps.java:29)&#10;&#9;at ✽.When check message on screen &quot;Github Username Luis&quot;(devtest.feature:9)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
+When check message on screen "Github Username Luis".........................failed
 
 StackTrace:
 java.lang.AssertionError
@@ -18,9 +14,39 @@ java.lang.AssertionError
 	at org.junit.Assert.assertTrue(Assert.java:41)
 	at org.junit.Assert.assertFalse(Assert.java:64)
 	at org.junit.Assert.assertFalse(Assert.java:74)
-	at br.com.luisdet.Pages.searchPage.navigateOnRepo(searchPage.java:59)
-	at br.com.luisdet.Steps.searchPageSteps.navigateOnRepo(searchPageSteps.java:40)
-	at ✽.And navigate on repo "2D-Platformer-Engine"(devtest.feature:28)
+	at br.com.luisdet.Pages.searchPage.checkMessage(searchPage.java:21)
+	at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreen(searchPageSteps.java:29)
+	at ✽.When check message on screen "Github Username Luis"(devtest.feature:9)
+]]></failure>
+</testcase>
+<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot;" time="7.941022">
+<system-out><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
+When search for a repo "1"..................................................passed
+When check message on screen "discourse_docker".............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 2" time="15.073435">
+<system-out><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
+When search for a repo "11".................................................passed
+And navigate on repo "2D-Platformer-Engine".................................passed
+When check message on screen github "GuodGameEngine"........................passed
+]]></system-out>
+</testcase>
+<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 3" time="16.76048">
+<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#10;&#9;at br.com.luisdet.Pages.searchPage.checkMessageOnScreenGithub(searchPage.java:71)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreenGithub(searchPageSteps.java:45)&#10;&#9;at ✽.When check message on screen github &quot;test123&quot;(devtest.feature:29)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
+When search for a repo "11".................................................passed
+And navigate on repo "2D-Platformer-Engine".................................passed
+When check message on screen github "test123"...............................failed
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertFalse(Assert.java:64)
+	at org.junit.Assert.assertFalse(Assert.java:74)
+	at br.com.luisdet.Pages.searchPage.checkMessageOnScreenGithub(searchPage.java:71)
+	at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreenGithub(searchPageSteps.java:45)
+	at ✽.When check message on screen github "test123"(devtest.feature:29)
 ]]></failure>
 </testcase>
 </testsuite>

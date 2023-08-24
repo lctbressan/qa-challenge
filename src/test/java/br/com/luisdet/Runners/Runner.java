@@ -16,7 +16,7 @@ import org.junit.runner.RunWith;
         glue = {"br.com.luisdet"},
         features = {"/Users/braziltest/sources/repos/qa-challenge/src/test/java/resources/features"},
         plugin = {"com.vimalselvam.cucumber.listener.ExtentCucumberFormatter:", "json:target/cucumber.json", "html:target/cucumber-report", "junit:target/junit.xml"},
-        tags={"@regressive2"},
+        tags={"@e2e"},
         strict = true,
         snippets = SnippetType.CAMELCASE)
 public  class Runner extends Hook {
