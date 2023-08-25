@@ -1,18 +1,8 @@
-# Some Notes about automation framework
+# To run docker 
 
-1 - Set the webdriver chrome location, in my case /usr/local/sbin/chromedriver.
+docker build -t <nome_da_sua_imagem> .
+docker run -it <nome_da_sua_imagem>
 
-1.1 -   Find for System.setProperty("webdriver.chrome.driver", "/usr/local/sbin/chromedriver");
-
-2 - The output directory generate a report automation.
-
-3 - The Runner contains ( features = {"/Users/braziltest/sources/repos/qa-challenge/src/test/java/resources/features"},
-), change to you local path machine.
-
-4 - The features folder contais all tests features, so, could you create a new tag if you want and replace on
-tags={"@regressive"}, on Runner class.
-
-to run test, goto Runner, and run, have a nice test!!!
 
 # QA Automation Coding Challenge
 

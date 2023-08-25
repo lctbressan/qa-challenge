@@ -1,52 +1,152 @@
-<?xml version="1.0" encoding="UTF-8"?><testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="71.64354">
-<testcase classname="Dev Test Cases" name="TS:[&quot;001&quot;] - [health Check Page]  - &quot;001&quot; - &quot;Check Page text is display&quot;" time="11.908377">
-<system-out><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When check message on screen "Github Username"..............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Dev Test Cases" name="TS:[&quot;001&quot;] - [health Check Page]  - &quot;002&quot; - &quot;Check Page text inst display&quot;" time="19.960226">
-<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#10;&#9;at br.com.luisdet.Pages.searchPage.checkMessage(searchPage.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreen(searchPageSteps.java:29)&#10;&#9;at ✽.When check message on screen &quot;Github Username Luis&quot;(devtest.feature:9)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When check message on screen "Github Username Luis".........................failed
+<?xml version="1.0" encoding="UTF-8"?><testsuite failures="5" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="74.472742">
+<testcase classname="Dev Test Cases" name="TS:[&quot;001&quot;] - [health Check Page]  - &quot;001&quot; - &quot;Check Page text is display&quot;" time="14.865651">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=116.0.5845.110)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a17f12c10cbf079354cf65d028eb4420&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)&#10;&#9;at ✽.Given open the test environment &quot;http://localhost:3000/&quot;(devtest.feature:4)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................failed
+When check message on screen "Github Username"..............................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at br.com.luisdet.Pages.searchPage.checkMessage(searchPage.java:21)
-	at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreen(searchPageSteps.java:29)
-	at ✽.When check message on screen "Github Username Luis"(devtest.feature:9)
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.110)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52385}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a17f12c10cbf079354cf65d028eb4420
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)
+	at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)
+	at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)
+	at ✽.Given open the test environment "http://localhost:3000/"(devtest.feature:4)
 ]]></failure>
 </testcase>
-<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot;" time="7.941022">
-<system-out><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When search for a repo "1"..................................................passed
-When check message on screen "discourse_docker".............................passed
-]]></system-out>
-</testcase>
-<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 2" time="15.073435">
-<system-out><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When search for a repo "11".................................................passed
-And navigate on repo "2D-Platformer-Engine".................................passed
-When check message on screen github "GuodGameEngine"........................passed
-]]></system-out>
-</testcase>
-<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 3" time="16.76048">
-<failure message="java.lang.AssertionError&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:64)&#10;&#9;at org.junit.Assert.assertFalse(Assert.java:74)&#10;&#9;at br.com.luisdet.Pages.searchPage.checkMessageOnScreenGithub(searchPage.java:71)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreenGithub(searchPageSteps.java:45)&#10;&#9;at ✽.When check message on screen github &quot;test123&quot;(devtest.feature:29)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................passed
-When search for a repo "11".................................................passed
-And navigate on repo "2D-Platformer-Engine".................................passed
-When check message on screen github "test123"...............................failed
+<testcase classname="Dev Test Cases" name="TS:[&quot;001&quot;] - [health Check Page]  - &quot;002&quot; - &quot;Check Page text inst display&quot;" time="7.134242">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=116.0.5845.110)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ce7cec3e0af00cfc9754eefecb073b7f&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)&#10;&#9;at ✽.Given open the test environment &quot;http://localhost:3000/&quot;(devtest.feature:4)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................failed
+When check message on screen "Github Username Luis".........................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:86)
-	at org.junit.Assert.assertTrue(Assert.java:41)
-	at org.junit.Assert.assertFalse(Assert.java:64)
-	at org.junit.Assert.assertFalse(Assert.java:74)
-	at br.com.luisdet.Pages.searchPage.checkMessageOnScreenGithub(searchPage.java:71)
-	at br.com.luisdet.Steps.searchPageSteps.checkMessageOnScreenGithub(searchPageSteps.java:45)
-	at ✽.When check message on screen github "test123"(devtest.feature:29)
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.110)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52416}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ce7cec3e0af00cfc9754eefecb073b7f
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)
+	at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)
+	at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)
+	at ✽.Given open the test environment "http://localhost:3000/"(devtest.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot;" time="7.445314">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=116.0.5845.110)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: d1c3b55f6e65c7bc60e19aa45176efeb&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)&#10;&#9;at ✽.Given open the test environment &quot;http://localhost:3000/&quot;(devtest.feature:4)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................failed
+When search for a repo "1"..................................................skipped
+When check message on screen "discourse_docker".............................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.110)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52448}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d1c3b55f6e65c7bc60e19aa45176efeb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)
+	at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)
+	at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)
+	at ✽.Given open the test environment "http://localhost:3000/"(devtest.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 2" time="14.167049">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=116.0.5845.110)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: f9ddb9b7522de6cc404efb82ff9ba475&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)&#10;&#9;at ✽.Given open the test environment &quot;http://localhost:3000/&quot;(devtest.feature:4)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................failed
+When search for a repo "11".................................................skipped
+And navigate on repo "2D-Platformer-Engine".................................skipped
+When check message on screen github "GuodGameEngine"........................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.110)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52485}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: f9ddb9b7522de6cc404efb82ff9ba475
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)
+	at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)
+	at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)
+	at ✽.Given open the test environment "http://localhost:3000/"(devtest.feature:4)
+]]></failure>
+</testcase>
+<testcase classname="Dev Test Cases" name="TS:[&quot;002&quot;] - [Check Result Page]  - &quot;001&quot; - &quot;Search for a repo in input field and check result&quot; 3" time="30.860486">
+<failure message="org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED&#10;  (Session info: chrome=116.0.5845.110)&#10;Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'&#10;System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ebd3795424dc2a8e85841a60f5a071d4&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)&#10;&#9;at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)&#10;&#9;at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)&#10;&#9;at ✽.Given open the test environment &quot;http://localhost:3000/&quot;(devtest.feature:4)&#10;"><![CDATA[Given open the test environment "http://localhost:3000/"....................failed
+When search for a repo "11".................................................skipped
+And navigate on repo "2D-Platformer-Engine".................................skipped
+When check message on screen github "test123"...............................skipped
+
+StackTrace:
+org.openqa.selenium.WebDriverException: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=116.0.5845.110)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'Braziltest iMac', ip: 'fe80:0:0:0:14e5:472d:be96:787c%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '13.4.1', java.version: '11.0.19'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.110, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: /var/folders/49/9k0n0b6s1v3...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52534}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: ebd3795424dc2a8e85841a60f5a071d4
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:276)
+	at br.com.luisdet.interfaces.Driverfactory.OpenBrowserChrome(Driverfactory.java:47)
+	at br.com.luisdet.interfaces.Driverfactory.getDriver(Driverfactory.java:21)
+	at br.com.luisdet.Steps.searchPageSteps.openTheTestEnvironment(searchPageSteps.java:16)
+	at ✽.Given open the test environment "http://localhost:3000/"(devtest.feature:4)
 ]]></failure>
 </testcase>
 </testsuite>
