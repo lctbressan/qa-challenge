@@ -26,7 +26,7 @@ public class Driverfactory extends Hook {
 
     public static WebDriver OpenBrowserChrome(String p0,String Path) throws Exception {
 
-        System.setProperty("webdriver.chrome.driver", "/usr/local/sbin/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/usr/local/bin/chromedriver");
         ChromeOptions options = new ChromeOptions();
         if(InetAddress.getLocalHost().getHostName().equals("Imac.local")){
             options.addArguments("window-size=1920,1080"); //1920x1080
