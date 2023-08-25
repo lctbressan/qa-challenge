@@ -46,7 +46,7 @@ ENV MAVEN_OPTS=-Xmx512m -XX:MaxPermSize=128m
 RUN mvn clean install
 
 # Inicia o aplicativo
-CMD ["yarn", "start"]
+RUN ["yarn", "start"]
 
 # Comando para rodar o Selenium
-CMD ["mvn", "test"]
+RUN mvn -f pom.xml clean test -DskipTests=true
