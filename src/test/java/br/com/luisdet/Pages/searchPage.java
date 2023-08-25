@@ -13,9 +13,10 @@ import java.util.List;
 public class searchPage extends BaseStep {
     public static void checkMessage(String arg0) {
         try {
-
-            WebDriverWait waitCad = new WebDriverWait(Webdriver, 10);
-            waitCad.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + arg0 + "')]"))).click();
+           WebElement ele = Webdriver.findElement(By.xpath("//*[contains(text(),'" + arg0 + "')]"));
+           ele.click();
+            //WebDriverWait waitCad = new WebDriverWait(Webdriver, 10);
+            //waitCad.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + arg0 + "')]"))).click();
 
         }catch(Exception e){
             Assert.assertFalse(true);
@@ -27,12 +28,17 @@ public class searchPage extends BaseStep {
 
             try {
 
+                WebElement ele = Webdriver.findElement(By.id("username"));
+                ele.sendKeys(arg0);
 
-                WebDriverWait waitCad = new WebDriverWait(Webdriver, 10);
-                waitCad.until(ExpectedConditions.elementToBeClickable(By.id("username"))).sendKeys(arg0);
+                //WebDriverWait waitCad = new WebDriverWait(Webdriver, 10);
+                //waitCad.until(ExpectedConditions.elementToBeClickable(By.id("username"))).sendKeys(arg0);
 
-                WebDriverWait waitCad1 = new WebDriverWait(Webdriver, 10);
-                waitCad1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Go')]"))).click();
+                WebElement ele1 = Webdriver.findElement(By.xpath("//*[contains(text(),'Go')]"));
+                ele1.click();
+
+                //WebDriverWait waitCad1 = new WebDriverWait(Webdriver, 10);
+                //waitCad1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'Go')]"))).click();
 
 
             }catch(Exception e){
@@ -46,9 +52,11 @@ public class searchPage extends BaseStep {
         try {
 
 
-            WebDriverWait waitCad1 = new WebDriverWait(Webdriver, 10);
-            waitCad1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + arg0 + "')]"))).click();
+            //WebDriverWait waitCad1 = new WebDriverWait(Webdriver, 10);
+            //waitCad1.until(ExpectedConditions.elementToBeClickable(By.xpath("//*[contains(text(),'" + arg0 + "')]"))).click();
 
+            WebElement ele1 = Webdriver.findElement(By.xpath("//*[contains(text(),'" + arg0 + "')]"));
+            ele1.click();
 
             ArrayList<String> wid = new ArrayList<String>(Webdriver.getWindowHandles());
             Webdriver.switchTo().window(wid.get(1));
