@@ -46,7 +46,10 @@ ENV MAVEN_OPTS=-Xmx512m -XX:MaxPermSize=128m
 RUN mvn clean install
 
 # Inicia o aplicativo
-RUN ["yarn", "start"]
+
+RUN export NODE_OPTIONS=--openssl-legacy-provider
+
+RUN  yarn start
 
 # Comando para rodar o Selenium
-RUN mvn -f pom.xml clean test -DskipTests=true
+RUN mvn clean test -DskipTests=true

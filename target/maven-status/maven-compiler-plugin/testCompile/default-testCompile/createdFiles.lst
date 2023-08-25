@@ -1,6 +1,6 @@
-br\com\luisdet\Steps\searchPageSteps.class
-br\com\luisdet\Pages\searchPage.class
-br\com\luisdet\Runners\Runner.class
-br\com\luisdet\interfaces\Driverfactory.class
-br\com\luisdet\Steps\Hook\BaseStep.class
-br\com\luisdet\Steps\Hook\Hook.class
+br/com/luisdet/Pages/searchPage.class
+br/com/luisdet/Steps/Hook/BaseStep.class
+br/com/luisdet/interfaces/Driverfactory.class
+br/com/luisdet/Runners/Runner.class
+br/com/luisdet/Steps/Hook/Hook.class
+br/com/luisdet/Steps/searchPageSteps.class
