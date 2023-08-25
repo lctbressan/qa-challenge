@@ -5,12 +5,12 @@ FROM ubuntu:latest
 RUN apt-get update -y && apt-get upgrade -y && \
     apt-get install -y curl wget unzip openjdk-11-jdk gnupg
 
-# Instala o Google Chrome
-RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/google-chrome-archive-keyring.gpg  && \
+
+# Adiciona a chave do repositório do Google Chrome
+RUN wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | gpg --dearmor -o /usr/share/keyrings/google-chrome-archive-keyring.gpg
 
 # Configura o repositório do Google Chrome
-RUN echo deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-archive-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main >> /etc/apt/sources.list.d/google-chrome.list
-
+RUN echo "deb [arch=amd64 signed-by=/usr/share/keyrings/google-chrome-archive-keyring.gpg] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list
 
 # Instala o Google Chrome
 RUN apt-get update -y && apt-get install -y google-chrome-stable
