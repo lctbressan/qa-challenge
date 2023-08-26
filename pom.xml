@@ -14,25 +14,7 @@
     </parent>
     <build>
         <plugins>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M6</version>
-                <configuration>
-                    <encoding>UTF-8</encoding>
-                    <!--parallel>methods</parallel>
-                    <threadCount>2</threadCount>
-                    <perCoreThreadCount>true</perCoreThreadCount>
-                    <useUnlimitedThreads>true</useUnlimitedThreads>
-                    <includes>
-                        <include>**/*Test.java</include>
-                        <include>**/com.braziltest.Runners/*Test.java</include>
 
-                    </includes-->
-                    <includes>
-                        <include>**/Runner.class</include>
-                    </includes>
-                </configuration>
-            </plugin>
 
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

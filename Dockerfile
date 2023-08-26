@@ -32,7 +32,9 @@ RUN apt-get install -y npm && npm install -g yarn
 # Copie o código do projeto para o contêiner
 WORKDIR /app
 COPY pom.xml .
+COPY package.json .
 COPY src/ ./src/
+COPY output/ ./output/
 
 
 # Configura o Chrome para funcionar em modo sem cabeça (headless)
@@ -46,16 +48,8 @@ ENV MAVEN_OPTS=-Xmx512m -XX:MaxPermSize=128m
 RUN mvn clean install
 
 # Inicia o aplicativo
- 
-
 RUN export NODE_OPTIONS=--openssl-legacy-provider
-
-RUN  yarn start
-
-# Comando para rodar o Selenium
-RUN mvn clean test -DskipTests=true
- 
-#RUN yarn start
+#RUN  yarn start
 
 # Comando para rodar o Selenium
 RUN mvn clean test -Dcucumber.options="--tags @e2e"
